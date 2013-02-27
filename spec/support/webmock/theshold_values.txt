@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Tue, 05 Feb 2013 02:56:05 GMT
+Content-Type: application/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-NewRelic-API-Version: v1
+ETag: "c4600f7dd46bacfa77f726074c10164a"
+Cache-Control: max-age=0, private, must-revalidate
+X-UA-Compatible: IE=Edge,chrome=1
+Set-Cookie: _newrelic_ui_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiIlY2I1ZjgxNTMwZGI3MTEzMzhjNDdjNzkzODRiYmIxZWNJIhZpbnB1dF9kZXZpY2VfdHlwZQY7AEZJIgpNT1VTRQY7AEZJIhRob3Zlcl9zdXBwb3J0ZWQGOwBGVA%3D%3D--24136b7026da33c2e68060c54d85f76af966ba06; path=/; secure; HttpOnly
+X-Runtime: 0.027918
+Vary: Accept-Encoding
+
+<?xml version="1.0" encoding="UTF-8"?>
+<threshold-values type="array">
+  <threshold_value name="Apdex" metric_value="0.95" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="0.95 [0.5]"/>
+  <threshold_value name="Application Busy" metric_value="20.1" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="20.1%"/>
+  <threshold_value name="Error Rate" metric_value="0.128" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="0.128%"/>
+  <threshold_value name="Throughput" metric_value="4930" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="4.93k rpm"/>
+  <threshold_value name="Errors" metric_value="6.33" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="6.33 epm"/>
+  <threshold_value name="Response Time" metric_value="246" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="246 ms"/>
+  <threshold_value name="DB" metric_value="50.6" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="50.6%"/>
+  <threshold_value name="CPU" metric_value="776" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="776%"/>
+  <threshold_value name="Memory" metric_value="18400" threshold_value="1" begin_time="2013-02-04 18:51:01" end_time="2013-02-04 18:54:01" formatted_metric_value="18,400 MB"/>
+</threshold-values>

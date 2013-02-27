@@ -1,0 +1,22 @@
+<%- unless @message.nil? %>
+  (function() {
+    var loadMessage, updateMessageText, statusElement;
+
+    updateMessageText = function(statusElement, messageText) {
+      return statusElement.innerHTML = messageText;
+    };
+
+    loadMessage = function(statusElement) {
+      statusElement.style.display = '';
+      return updateMessageText(statusElement, "<%= @message.body %>");
+    };
+
+    statusElement = document.getElementById("status-site-update");
+    loadMessage(statusElement);
+  })();
+<%- else %>
+  (function() {
+    statusElement = document.getElementById("status-site-update");
+    statusElement.style.display = 'none';
+  })();
+<%- end %>

@@ -1,0 +1,23 @@
+.widget
+  .widget-header
+    h3 Issues
+
+  .widget-content
+    p= link_to "New Issue", new_issue_path, class: "btn btn-success"
+
+    - if @issues.empty?
+      p= "No issues have been added"
+
+    - else
+      .container
+        table.table
+          tr
+            th Title
+            th Actions
+
+          - @issues.each do |issue|
+            tr
+              td= link_to issue.title, edit_issue_path(issue)
+              td
+                ==' issue.admin_updates_link
+                = link_to "New Update", new_issue_update_path(issue)

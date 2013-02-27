@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Tue, 05 Feb 2013 00:02:22 GMT
+Content-Type: application/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-NewRelic-API-Version: v1
+ETag: "7c819cab85fb6cc47e212d42a7eb07a7"
+Cache-Control: max-age=0, private, must-revalidate
+X-UA-Compatible: IE=Edge,chrome=1
+Set-Cookie: _newrelic_ui_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiIlMWM5OTJkOGRkMjAxNDk3NmM4ZWU0YzRjMWY3MGMzNTNJIhZpbnB1dF9kZXZpY2VfdHlwZQY7AEZJIgpNT1VTRQY7AEZJIhRob3Zlcl9zdXBwb3J0ZWQGOwBGVA%3D%3D--734307ec572445e42864abe501b92bfc0da10ab7; path=/; secure; HttpOnly
+X-Runtime: 0.118664
+Vary: Accept-Encoding
+
+<?xml version="1.0" encoding="UTF-8"?>
+<accounts type="array">
+  <account>
+    <allow-rails-core>true</allow-rails-core>
+    <api-key>9999</api-key>
+    <data-access-key>9999</data-access-key>
+    <id type="integer">9999</id>
+    <license-key>9999</license-key>
+    <name>test</name>
+    <partner-external-identifier nil="true"></partner-external-identifier>
+    <phone-number nil="true"></phone-number>
+    <event-feed-uri>/account_feeds/9999/events.rss</event-feed-uri>
+    <primary-admin>
+      <email>technology-managers@test.com</email>
+      <first-name nil="true"></first-name>
+      <last-name nil="true"></last-name>
+      <state>active</state>
+    </primary-admin>
+    <subscription>
+      <annual-renewal-on>2013-12-31</annual-renewal-on>
+      <expires-on nil="true"></expires-on>
+      <number-of-hosts type="integer">100</number-of-hosts>
+      <starts-on>2012-12-27</starts-on>
+      <state>paid</state>
+      <product-name>Volume Annual</product-name>
+    </subscription>
+  </account>
+</accounts>

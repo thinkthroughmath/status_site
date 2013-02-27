@@ -1,0 +1,18 @@
+h1= "Updates for Issue #{@issue.id}"
+
+p= link_to "New Update", new_issue_update_path(@issue)
+
+- if @updates.empty?
+  p= "No updates have been added"
+
+- else
+
+  table
+    tr
+      th Title
+      th Actions
+
+    - @updates.each do |update|
+      tr
+        td= update.title
+        td= ""

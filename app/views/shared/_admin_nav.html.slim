@@ -1,0 +1,16 @@
+.subnavbar
+  .subnavbar-inner
+    .container
+      ul.mainnav
+          li class=nav_class(root_path)
+            = link_to root_path do
+              i class="icon-home"
+              span Home
+          li class=nav_class(admin_issues_path)
+            = link_to admin_issues_path do
+              i class="icon-fire"
+              span Issues
+          li class=nav_class(admin_messages_path)
+            = link_to admin_messages_path do
+              i class="icon-calendar"
+              span Messages

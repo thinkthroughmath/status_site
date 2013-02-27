@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Tue, 05 Feb 2013 00:16:22 GMT
+Content-Type: application/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-NewRelic-API-Version: v1
+ETag: "df5a8c15e238881a7b09ff8b0b1a6a18"
+Cache-Control: max-age=0, private, must-revalidate
+X-UA-Compatible: IE=Edge,chrome=1
+Set-Cookie: _newrelic_ui_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiIlYTAwODg1MGNjMTAzOWJkNmY2YzE1YWEzMTlmMDNhZmVJIhZpbnB1dF9kZXZpY2VfdHlwZQY7AEZJIgpNT1VTRQY7AEZJIhRob3Zlcl9zdXBwb3J0ZWQGOwBGVA%3D%3D--75dbdd0f4419a0b6db83723bb9a1863c826dfb91; path=/; secure; HttpOnly
+X-Runtime: 0.018149
+Vary: Accept-Encoding
+
+<?xml version="1.0" encoding="UTF-8"?>
+<applications type="array">
+  <application>
+    <id type="integer">8888</id>
+    <name>test-application</name>
+    <overview-url>https://rpm.newrelic.com/accounts/9999/applications/8888</overview-url>
+    <servers-url>https://rpm.newrelic.com/api/v1/accounts/9999/applications/8888/servers</servers-url>
+  </application>
+</applications>

@@ -1,0 +1,21 @@
+= form_for @issue do |f|
+  - if @issue.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@issue.errors.count, "error")} prohibited this issue from being saved:"
+      ul
+        - @issue.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :body
+    = f.text_area :body
+  .field
+    = f.label :current_site_status
+    = f.select :current_site_status, options_for_select(SiteStatus.status_options, @issue.current_site_status)
+  .field
+    = f.label :resolved
+    = f.check_box :resolved
+  .actions = f.submit 'Save'

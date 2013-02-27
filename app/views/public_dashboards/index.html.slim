@@ -1,0 +1,53 @@
+.row
+  .span8
+    .widget
+      .widget-header
+        h3 Current Status
+      .widget-content
+        p= @current_status
+    .widget
+      .widget-header
+        h3
+          =' "Issues"
+          = link_to image_tag("feed-icon-14x14.png"), issues_url(format: "atom")
+          = content_for :head, auto_discovery_link_tag(:atom, issues_url(format: "atom"))
+      .widget-content
+        ul
+        - @issues.each do |issue|
+          dl
+            dt
+              h3= link_to issue.title, issue_path(issue)
+              p= "#{time_ago_in_words(issue.created_at)} ago"
+            dd
+              = truncate(issue.body)
+
+  .span3.offset1
+    div.row
+      .widget
+        .widget-header
+          h3 Sign Up for Updates
+        .widget-content
+          == render partial: 'email_subscriptions/form'
+
+
+          - if @next_message
+            div.row
+              .widget
+                .widget-header
+                  h3
+                    =' "Next Scheduled Maintaince"
+                    = link_to image_tag("feed-icon-14x14.png"), issues_url(format: "atom")
+                = content_for :head, auto_discovery_link_tag(:atom, messages_url(format: "atom"))
+              h4= @next_message.start_date
+
+              p= link_to "More", upcoming_maintenances_path
+
+    div.row
+      .widget
+        .widget-header
+          h3 Current Status
+        .widget-content
+          ul.application_status
+            - @stats.threshold_values.each do |stat|
+              li class=stat.color_value.downcase
+                span= stat.name

@@ -1,0 +1,11 @@
+h2= @issue.title
+p= "#{time_ago_in_words(@issue.created_at)} ago"
+== @issue.body
+
+
+- unless @updates.empty?
+  dl
+    - @updates.each do |update|
+      - if update.title
+        dt= update.title
+      dd= update.body

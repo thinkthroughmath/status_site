@@ -1,0 +1,11 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to 'Status', root_path, class: 'brand'
+
+      ul.nav.pull-right
+        == render partial: 'shared/user_menu'
+
+
+- if current_admin
+  == render'shared/admin_nav'

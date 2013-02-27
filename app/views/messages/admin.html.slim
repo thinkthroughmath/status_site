@@ -1,0 +1,20 @@
+.widget
+  .widget-header
+    h3 Messages
+  .widget-content
+    p= link_to "New Message", new_message_path,class: "btn btn-success"
+
+    - if @messages.empty?
+      p= "No messages have been added"
+
+    - else
+
+      table.table
+        tr
+          th Title
+          th Actions
+
+        - @messages.each do |message|
+          tr id="message-#{message.id}"
+            td= link_to message.body, edit_message_path(message)
+            td= link_to 'Delete', message_path(message), data: { confirm:'Are you sure?' }, method: :delete

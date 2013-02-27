@@ -1,0 +1,15 @@
+= form_for @message do |f|
+  - if @message.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@message.errors.count, "error")} prohibited this message from being saved:"
+      ul
+        - @message.errors.full_messages.each do |message|
+          li = message
+
+  = f.label :body
+  = f.text_area :body
+
+  = f.label :start_date
+  = f.text_field :start_date, class: 'datepicker'
+
+  .actions = f.submit 'Save'

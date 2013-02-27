@@ -1,0 +1,41 @@
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Tue, 05 Feb 2013 15:55:02 GMT
+Content-Type: application/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-NewRelic-API-Version: v1
+ETag: "34cfd0129b688143451ec0f89bcaff23"
+Cache-Control: max-age=0, private, must-revalidate
+X-UA-Compatible: IE=Edge,chrome=1
+X-Runtime: 0.146979
+Vary: Accept-Encoding
+
+<?xml version="1.0" encoding="UTF-8"?>
+<accounts type="array">
+  <account>
+    <id type="integer">9999</id>
+    <name>test-production Heroku</name>
+    <event-feed-uri>/account_feeds/fec8577de7afef7b6475a0cdc40edfc1ddddb6fa2064f66/events.rss</event-feed-uri>
+    <applications type="array">
+      <application>
+        <id type="integer">8888</id>
+        <name>test-production</name>
+        <overview-url>https://rpm.newrelic.com/accounts/8888/applications/9999</overview-url>
+        <servers-url>https://rpm.newrelic.com/api/v1/accounts/8888/applications/9999/servers</servers-url>
+        <threshold-values type="array">
+          <threshold_value name="Apdex" metric_value="0.96" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="0.96 [0.5]"/>
+          <threshold_value name="Application Busy" metric_value="53.4" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="53.4%"/>
+          <threshold_value name="Error Rate" metric_value="0.0709" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="0.0709%"/>
+          <threshold_value name="Throughput" metric_value="28700" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="28.7k rpm"/>
+          <threshold_value name="Errors" metric_value="20.3" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="20.3 epm"/>
+          <threshold_value name="Response Time" metric_value="224" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="224 ms"/>
+          <threshold_value name="DB" metric_value="49.7" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="49.7%"/>
+          <threshold_value name="CPU" metric_value="4430" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="4.43k%"/>
+          <threshold_value name="Memory" metric_value="36000" threshold_value="1" begin_time="2013-02-05 12:50:01" end_time="2013-02-05 12:53:01" formatted_metric_value="36,000 MB"/>
+        </threshold-values>
+      </application>
+    </applications>
+  </account>
+</accounts>
